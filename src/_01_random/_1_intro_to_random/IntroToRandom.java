@@ -17,10 +17,10 @@ public class IntroToRandom {
 		/*************  Random integers with no bounds  *************/
 		
 		// Run this program and you will see that nextInt created 5 random integers which have been printed to the console
-		for (int i=0; i<5; i++) {
-			number = ran.nextInt();
-			System.out.println(number);
-		}
+		//for (int i=0; i<5; i++) {
+		//	number = ran.nextInt();
+		//	System.out.println(number);
+		//}
 		// The range of numbers that an int variable can hold is very large (as you can see in the console).
 		// Integers can also be positive or negative.
 
@@ -30,7 +30,7 @@ public class IntroToRandom {
 		for (int i=0; i<5; i++) {
 			// Uncomment the line of code below, but replace the _____ with a positive integer (e.g. 100) before running the program			
 
-			// number = ran.nextInt(_____);
+			number = ran.nextInt(100);
 			System.out.println(number);
 			
 		}
@@ -49,7 +49,7 @@ public class IntroToRandom {
 			// For our example, this will be:  ( 75 - 25 + 1 )
 			// Also replace <lowest value> with the start of the range.  For our example, this is 25.
 			
-			// number = ran.nextInt(_____) + <lowest value>;
+			number = ran.nextInt(75-25+1) + 25;
 			System.out.println(number);
 			
 		}
@@ -59,7 +59,10 @@ public class IntroToRandom {
 		/*************  Random integers with an upper and lower (negative) limit  *************/
 		
 		// Using the above example, generate 5 random numbers between -222 and 88
-
+		for (int i=0; i<5; i++) {
+			number = ran.nextInt(88-222+1) + 88;
+			System.out.println(number);
+		}
 
 	}
 }
