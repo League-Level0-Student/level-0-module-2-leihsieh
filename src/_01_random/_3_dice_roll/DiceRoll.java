@@ -53,7 +53,7 @@ public class DiceRoll {
 			int randomChoice = 0;
 			Random ran = new Random();
 			
-			randomChoice = ran.nextInt(6+1);
+			randomChoice = ran.nextInt(5+1);
 
 			// 2. Fix the code below so that it displays the correct image
 			if (randomChoice == 1) {
